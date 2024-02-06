@@ -1,0 +1,52 @@
+1d) Hello World !
+
+1e) cp lab2/lab2.txt lab3       ||||        mv lab2.txt lab3.txt
+
+1f) mv lab4/HelloWorld.jpg lab5
+
+1g) mkdir lab6
+
+1h) rm -rf lab7/                         recursively force removes the folder with everything inside
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2a) 110
+
+2b i) because right now we are using 'uint8_t' which stands for 'unsigned integer 8 bits'
+        meaning it can only store 8 bits max and 350 = 101011110 (9 bits) which turns to 01011110 (8 bits) = 94
+
+ii) change c from 'uint8_t' to 'uint16_t' so it can store more bits
+
+-----------------------------------------------------------------------------------------------------------------------
+
+3a) 6    |||   words[] means its an array of characters not just one
+b) we make firstThree 4 characters long because we need to have a \0 at the end 
+        this dictates the end of a string. So we make a string len 4
+        copy the first 3 characters of FOOBAR then add a 4th character \0 null character
+
+-----------------------------------------------------------------------------------------------------------------------
+
+4a) head -n 10 alien_message.txt 
+        head = first 
+        -n 10 specifies 10 lines. So first 10 lines of the txt
+
+
+b) wc -w alien_message.txt (108)
+        wc = word count -w means count words 
+
+
+c) grep -i "translate" alien_message.txt
+        -i means case-insensitive and will return the lines with "translate"
+
+
+d) grep -i "translate" alien_message.txt > translation_clues.txt
+        gets the lines and puts them in a new file
+
+
+e) sed -i '' 's/Xylophont/Greetings/g' alien_message.txt
+        -i = in place editing allows for direct editing
+        '' = argument for the -i needed for macOS
+        s = substitute 
+        g = substitution global meaning all occurances on each lines
+
+
