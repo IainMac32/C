@@ -1,0 +1,29 @@
+n=65
+Factorial of 65 (Iterative): 9223372036854775808
+Time taken (Iterative): 0.006000 milliseconds
+Factorial of 65 (Recursive): 9223372036854775808
+Time taken (Recursive): 0.003000 milliseconds
+
+--------------------------------------------------------------------------------
+
+n=66
+Enter a number to compute its factorial: 66
+Factorial of 66 (Iterative): 0
+Time taken (Iterative): 0.006000 milliseconds
+Factorial of 66 (Recursive): 0
+Time taken (Recursive): 0.003000 milliseconds
+
+--------------------------------------------------------------------------------
+
+n=100000
+Factorial of 100000 (Iterative): 0
+Time taken (Iterative): 0.645000 milliseconds
+Factorial of 100000 (Recursive): 0
+Time taken (Recursive): 5.891000 milliseconds
+
+--------------------------------------------------------------------------------
+
+n=500000
+Factorial of 500000 (Iterative): 0
+Time taken (Iterative): 2.828000 milliseconds
+Segmentation fault: 11
