@@ -86,6 +86,7 @@ int main() {
     bookSeat(1,5);
 
 
+
     displaySeatingChart();
     displayTotalBookedSeats();
 

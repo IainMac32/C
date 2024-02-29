@@ -14,7 +14,7 @@ int findFirstOccurrence(int number) {
 }
 
 int main() {
-    int number = 15;
+    int number = 6;
 
     int index = findFirstOccurrence(number);
     if (index != -1) {

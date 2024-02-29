@@ -27,3 +27,22 @@ n=500000
 Factorial of 500000 (Iterative): 0
 Time taken (Iterative): 2.828000 milliseconds
 Segmentation fault: 11
+
+--------------------------------------------------------------------------------
+
+a) 65
+
+
+b) overflow meaning its too large to be stored in the data type given so it wraps back to 0.
+    this is becasue 66! cannot be stored in 64 bits.
+
+
+c) yes because I have a 64 bit system they hold the same range of values
+
+
+d) due to stack size (memory) which is what is used to store info about the program when ran.
+    since the number was so large the recursive function would have been called thousands of calls
+    each call needs stack space to hold the variable info.
+
+
+e) for smaller number recursive. As we get higher iterative is better

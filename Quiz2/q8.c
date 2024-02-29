@@ -30,8 +30,11 @@ int main()
     // Measuring time for factorial calculation using iterative method
     clock_t startIterative = clock();
     unsigned long long factorialIte = factorialIterative(n);
+    //holds more digits
     clock_t endIterative = clock();
     double timeTakenIterative = ((double)(endIterative - startIterative)) * 1000 / CLOCKS_PER_SEC;
+    // CLOCKS PER SEC number of clock ticks per second you are converting clock ticks which is what end and start are to seconds
+    //then * 1000 is from seconds to milliseconds
 
     printf("Factorial of %d (Iterative): %llu\n", n, factorialIte);
     printf("Time taken (Iterative): %.6f milliseconds\n", timeTakenIterative);
@@ -44,6 +47,7 @@ int main()
 
     printf("Factorial of %d (Recursive): %llu\n", n, factorialRec);
     printf("Time taken (Recursive): %.6f milliseconds\n", timeTakenRecursive);
+
 
     return 0;
 }

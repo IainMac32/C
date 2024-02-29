@@ -3,12 +3,12 @@
 //we do this to have the num of students as a variable so its easier to change if we want 6 students for example
 
 
-void inputGrades(int grades[]) {
+void inputGrades(float grades[]) {
     printf("Enter grades for %d students:\n", NUM_STUDENTS);
     for (int i = 0; i < NUM_STUDENTS; i++) {
         do {
             printf("Enter grade for student %d: ", i + 1);
-            scanf("%d", &grades[i]);
+            scanf("%f", &grades[i]);
             if (grades[i] < 0 || grades[i] > 100) {
                 printf("Grade must be between 0 and 100. Please try again.\n");
             }
@@ -16,10 +16,10 @@ void inputGrades(int grades[]) {
     }
 }
 
-void analyzeGrades(int grades[]) {
-    int sum = 0;
-    int highest = grades[0];
-    int lowest = grades[0];
+void analyzeGrades(float grades[]) {
+    float sum = 0;
+    float highest = grades[0];
+    float lowest = grades[0];
 
     for (int i = 0; i < NUM_STUDENTS; i++) {
         sum += grades[i];
@@ -37,8 +37,8 @@ void analyzeGrades(int grades[]) {
 
 
     printf("Average grade: %.2f\n", average);
-    printf("Highest grade: %d\n", highest);
-    printf("Lowest grade: %d\n", lowest);
+    printf("Highest grade: %.2f\n", highest);
+    printf("Lowest grade: %.2f\n", lowest);
 }
 
 
@@ -47,7 +47,7 @@ void analyzeGrades(int grades[]) {
 
 
 int main() {
-    int grades[NUM_STUDENTS];
+    float grades[NUM_STUDENTS];
     //since NUM_STUDENTS is 5 it means there is 5 values in the grades list
 
     inputGrades(grades);

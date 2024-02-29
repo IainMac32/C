@@ -13,11 +13,17 @@ int main() {
     printf("Do you have a discount code? (1 for yes, 0 for no): ");
     scanf("%d", &hasDiscount);
 
+    
 
-    if (hasDiscount) {
+    if (hasDiscount==1) {
         // Asking for the discount code
         printf("Please enter your discount code (A, B, or C): ");
         scanf(" %c", &discountCode); // Note the space before %c to consume any preceding whitespace or newline
+    } else if (hasDiscount==0){
+
+    }else{
+        printf("INVALID\n");
+        return -1;
     }
 
     // Using switch statement to categorize the age group
@@ -36,6 +42,7 @@ int main() {
             break;
         default:
             printf("Invalid age entered.\n");
+            return -1;
             break;
     }
     //the ... just means interval so its 65 - 120

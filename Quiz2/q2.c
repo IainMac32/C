@@ -9,9 +9,19 @@ int main() {
     printf("Enter your age: ");
     scanf("%d", &age);
 
+    if (age < 0 || age > 120){
+        printf("INVALID\n");
+        return -1;
+    };
+
     // Prompt user for student status
     printf("Are you a student? (1 for yes, 0 for no): ");
     scanf("%d", &isStudent);
+
+    if (isStudent < 0 || isStudent > 1){
+        printf("INVALID\n");
+        return -1;
+    };
 
     if (isStudent == 1 && (age > 5 && age < 30)) {
         isStudent = 1;
